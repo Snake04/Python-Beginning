@@ -1,0 +1,10 @@
+number = input("Please, input number.")
+
+def function(number):
+    number_modulo = (int(number) % 2 == 0)
+    if number_modulo == True:
+        return "Your number " + str(number) + " is even"
+    else:
+        return "Your number " + str(number) + " is odd"
+
+print(function(number))
