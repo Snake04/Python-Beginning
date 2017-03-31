@@ -1,0 +1,21 @@
+from datetime import datetime
+
+now = datetime.now()
+current_year = now.year
+
+name = input("Please tell me what's Your name? ")
+print("Nice to meet You, " + name)
+
+age_1 = input(name + ", please enter Your age: ")
+age_1 = int(age_1)
+tip_1 = type(age_1)
+tip_2 = type(20)
+year_after_100 = current_year + 100 - age_1
+
+def age(age_1):
+    if tip_1 == tip_2:
+        return name + ", In " + str(year_after_100) + " year You will be 100 years old."
+    else:
+        return "Sorry, You should go back and print number"
+
+print(age(age_1))
