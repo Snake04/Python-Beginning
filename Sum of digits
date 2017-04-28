@@ -1,0 +1,10 @@
+def digit_sum(n):
+    n_str = str(n)
+    empty_int = 0
+    for digits in n_str:
+        empty_int = int(empty_int) + int(digits)
+        new_int = str(empty_int)
+    return empty_int
+
+
+print(digit_sum(11))    
