@@ -1,0 +1,9 @@
+def reverse(text):
+    new_word = []
+    new_str = ""
+    for letters in text:
+        new_word.insert(0, letters)
+    return new_str.join(new_word)
+    
+print(reverse("Githubb"))
+    
