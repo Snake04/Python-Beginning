@@ -1,0 +1,10 @@
+vowels = ["a", "e", "i", "o", "u"]
+
+def anti_vowel(text):
+    new_w = ""
+    for letter in text:
+        if letter.lower() not in vowels:
+            new_w = new_w + letter
+    return new_w
+
+print(anti_vowel("abc"))
