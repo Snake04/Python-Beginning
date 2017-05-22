@@ -1,0 +1,11 @@
+def median(x):
+    lenx = len(x)
+    if lenx % 2 != 0:
+        sorteded = sorted(x)
+        indx = lenx / 2
+        return sorteded[indx]
+    elif lenx % 2 == 0:
+        sorteded = sorted(x)
+        dividedlen = lenx/2
+        multiplied = (sorteded[dividedlen-1] + sorteded[dividedlen])*0.5
+        return multiplied
